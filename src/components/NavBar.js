@@ -11,7 +11,6 @@ class NavBar extends React.Component{
         if(localStorage.getItem("token"))
             this.props.login();
     }
-
     logout = () => {
         localStorage.clear();
         this.props.logout();
