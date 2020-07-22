@@ -1,12 +1,17 @@
 import React from "react";
 import {Link , NavLink} from "react-router-dom";
 import {connect} from 'react-redux';
-import {signout} from "./redux/actions";
+import {signin, signout} from "./redux/actions";
 
 class NavBar extends React.Component{
     state = {
         searchKey: "",
     }
+    componentDidMount() {
+        if(localStorage.getItem("token"))
+            this.props.login();
+    }
+
     logout = () => {
         localStorage.clear();
         this.props.logout();
@@ -77,7 +82,8 @@ const mapStatetoProps = (state) => {
 }
 const mapDispachtoProps = (dispatch) => {
     return({
-        logout : () => dispatch(signout)
+        logout : () => dispatch(signout),
+        login : () => dispatch(signin)
         })
 }
 export default connect(mapStatetoProps , mapDispachtoProps)(NavBar);

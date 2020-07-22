@@ -8,10 +8,6 @@ import Login from './components/Login';
 import About from "./components/About";
 
 class App extends Component{
-    componentDidMount() {
-
-    }
-
     render() {
         return (
             <BrowserRouter>
