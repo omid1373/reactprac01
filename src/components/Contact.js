@@ -6,6 +6,13 @@ class Contact extends React.Component{
             <div>
                 <br/>
                 <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
+                <h1>Contact Us Component !!!</h1>
             </div>
         )
     }

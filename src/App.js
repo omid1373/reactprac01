@@ -10,6 +10,7 @@ import About from "./components/About";
 class App extends Component{
     render() {
         return (
+            <React.Fragment>
             <BrowserRouter>
                 <div className="App">
                     <NavBar/>
@@ -20,7 +21,10 @@ class App extends Component{
                         <Route path="/about" component={About}/>
                     </Switch>
                 </div>
+                {/*<div className="loading"><div className="loader"></div>*/}
+                {/*</div>*/}
             </BrowserRouter>
+            </React.Fragment>
         );
     }
 }
